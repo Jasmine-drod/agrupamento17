@@ -1,0 +1,48 @@
+
+/* Simples CSS responsivo e limpo */
+:root{
+  --bg:#ffffff;
+  --accent1:#2d6a4f; /* verde */
+  --accent2:#ffd166; /* amarelo */
+  --accent3:#1e90ff; /* azul */
+  --accent4:#d90429; /* vermelho */
+  --text:#222;
+  --muted:#666;
+  --container:1100px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; color:var(--text); background:var(--bg); line-height:1.5}
+.container{max-width:var(--container); margin:0 auto; padding:18px}
+.site-header{background:#fff; border-bottom:1px solid #eee; position:sticky; top:0; z-index:50}
+.header-inner{display:flex; align-items:center; justify-content:space-between}
+.brand{display:flex; gap:12px; align-items:center}
+.logo{width:72px; height:72px; object-fit:contain; background:#f4f4f4; padding:8px; border-radius:8px}
+.site-header nav a{margin-left:12px; text-decoration:none; color:var(--text)}
+.site-header nav .btn{background:var(--accent1); color:#fff; padding:8px 12px; border-radius:8px; text-decoration:none}
+.site-header.small .logo{width:56px; height:56px}
+
+.hero{background:linear-gradient(90deg, rgba(45,106,79,0.06), rgba(30,144,255,0.03)); padding:28px 0; margin-bottom:18px}
+.hero h2{margin:0 0 8px 0}
+.btn{display:inline-block; padding:10px 14px; background:var(--accent1); color:#fff; text-decoration:none; border-radius:8px}
+.btn.outline{background:transparent; border:2px solid var(--accent1); color:var(--accent1)}
+.btn.large{padding:14px 18px; font-weight:600}
+.grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px}
+.highlights article{background:#fff; padding:14px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.04)}
+
+.about-brief{padding:18px 0}
+.contact-strip{background:var(--accent2); padding:12px; color:#000; margin-top:18px}
+
+.footer-inner{display:flex; justify-content:space-between; gap:12px; padding:12px 0; color:var(--muted)}
+.map-placeholder{background:#f5f5f5; padding:24px; border-radius:8px; text-align:center}
+.gallery-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:8px}
+.gallery-grid img{width:100%; height:140px; object-fit:cover; border-radius:8px}
+
+/* forms */
+form label{display:block; margin-bottom:10px}
+form input, form select{width:100%; padding:8px; border:1px solid #ddd; border-radius:6px}
+
+/* small screens */
+@media (max-width:800px){
+  .header-inner{flex-direction:column; align-items:flex-start; gap:12px}
+  .site-header nav{display:flex; flex-wrap:wrap; gap:8px}
+}

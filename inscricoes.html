@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>Inscrições — Agrupamento nº 17</title><link rel="stylesheet" href="styles.css" /></head>
+<body>
+<header class="site-header small"><div class="container header-inner"><div class="brand"><img src="assets/logo-placeholder.png" alt="Logotipo AEA" class="logo" /><div><h1>Agrupamento nº 17</h1><p class="tagline">Por um mundo cada vez melhor</p></div></div><nav><a href="index.html">Início</a><a href="about.html">Sobre</a><a href="patrulhas.html">Patrulhas</a><a href="news.html">Notícias</a><a href="galeria.html">Galeria</a><a href="contato.html">Contato</a></nav></div></header>
+<main class="container">
+  <h2>Formulário de Inscrição</h2>
+  <p>Preencha o formulário abaixo e enviaremos um contacto pelo e-mail ou WhatsApp.</p>
+  <form id="registrationForm">
+    <label>Nome completo<input name="name" required></label>
+    <label>Idade<input name="age" type="number" required></label>
+    <label>Secção desejada
+      <select name="section">
+        <option>Lobitos</option><option>Juniores</option><option>Seniores</option><option>Caminheiros</option>
+      </select>
+    </label>
+    <label>Nome do encarregado<input name="guardian"></label>
+    <label>Email do encarregado<input name="guardian_email" type="email"></label>
+    <button type="submit" class="btn">Enviar inscrição</button>
+  </form>
+  <p class="note">As inscrições entram diretamente por email para o agrupamento (configure se desejar usar serviço de backend).</p>
+</main>
+<footer><div class="container footer-inner"><p>© Agrupamento nº 17 — Núcleo VIII</p></div></footer>
+<script>
+document.getElementById('registrationForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  alert('Obrigado! A inscrição será enviada por email (configurar backend).');
+});
+</script>
+</body></html>
