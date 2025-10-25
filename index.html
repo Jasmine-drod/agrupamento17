@@ -1,84 +1,72 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Agrupamento nº 17 – Núcleo VIII, Região de Luanda</title>
-  <meta name="description" content="Agrupamento nº 17 – Núcleo VIII. Lema: Por um mundo cada vez melhor. Local: Kilamba Kiaxi, Luanda. Contacto: agrupamenton17@gmail.com" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Agrupamento 17 – Núcleo VIII - A.E.A</title>
+  <link rel="stylesheet" href="/styles.css"/>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
+  <header class="header">
+    <div class="container" style="display:flex; align-items:center;">
       <div class="brand">
-        <img src="assets/logo-placeholder.png" alt="Logotipo AEA (substitua pelo oficial)" class="logo" />
+        <img src="/assets/logo.png" alt="Logo Agrupamento">
         <div>
-          <h1>Agrupamento nº 17 — Núcleo VIII</h1>
-          <p class="tagline">Por um mundo cada vez melhor</p>
+          <div style="font-weight:800">Agrupamento 17 – Núcleo VIII - A.E.A</div>
+          <div style="font-size:13px; opacity:0.95">Clã Escutista — Natureza e Aventura</div>
         </div>
       </div>
-      <nav>
-        <a href="index.html">Início</a>
-        <a href="about.html">Sobre</a>
-        <a href="patrulhas.html">Patrulhas</a>
-        <a href="news.html">Notícias</a>
-        <a href="galeria.html">Galeria</a>
-        <a href="contato.html">Contato</a>
-        <a href="inscricoes.html" class="btn">Inscrições</a>
+      <nav class="nav">
+        <a href="/index.html">Início</a>
+        <a href="/about.html">Sobre nós</a>
+        <a href="/projects.html">Projetos / Atividades</a>
+        <a href="/gallery.html">Galeria de fotos</a>
+        <a href="/contact.html">Contactos</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h2>Bem-vindo ao site oficial do Agrupamento nº 17</h2>
-        <p>Localizado em Kilamba Kiaxi — Escola Primária 8008. Fundado em 14 de Maio de 1995.</p>
-        <div class="cta-row">
-          <a href="inscricoes.html" class="btn large">Inscrever-se</a>
-          <a href="news.html" class="btn outline">Ver Notícias</a>
+  <main class="container">
+    <section class="hero card" style="margin-top:18px">
+      <div style="display:flex; gap:18px; align-items:center;">
+        <div style="flex:1">
+          <h1>Bem-vindos ao Agrupamento 17 – Núcleo VIII</h1>
+          <p>Espaço dedicado aos nossos escuteiros, actividades e projetos. Explora o site para saber mais.</p>
+        </div>
+        <div style="width:420px; border-radius:12px; overflow:hidden;">
+          <img src="/assets/hero.svg" alt="Banner" style="width:100%; display:block;"/>
         </div>
       </div>
     </section>
 
-    <section class="highlights">
-      <div class="container grid">
-        <article>
-          <h3>Próximo evento: ACA-FIM</h3>
-          <p>Acampamento de final de ano - atividades, formação e convivência.</p>
-        </article>
-        <article>
-          <h3>Festa do Padroeiro</h3>
-          <p>Celebração anual com participação da comunidade e pais.</p>
-        </article>
-        <article>
-          <h3>Área Restrita</h3>
-          <p>Acesso para chefes, encarregados e escuteiros (configurar login no painel administrativo).</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="about-brief">
-      <div class="container">
-        <h3>Quem somos</h3>
-        <p>O agrupamento nº 17 foi fundado na paróquia de S. João Calábria (Kilamba Kiaxi). Em 2025, após uma reestruturação, passou a funcionar melhor na Escola Primária 8008 mediante acordo com o Ministério da Educação. O nosso objetivo é preparar jovens para contribuir com o desenvolvimento das comunidades.</p>
-      </div>
-    </section>
-
-    <section class="contact-strip">
-      <div class="container">
-        <p><strong>Contacto:</strong> agrupamenton17@gmail.com &nbsp;|&nbsp; WhatsApp: +244 957 893 789</p>
+    <section class="section">
+      <div class="grid">
+        <div class="card">
+          <h3>Sobre o Agrupamento</h3>
+          <p>Orgulhosamente servimos a comunidade com actividades que promovem cidadania, autonomia e contato com a natureza.</p>
+        </div>
+        <div class="card">
+          <h3>Próximo Acampamento</h3>
+          <p>Data: a definir — Local: Campo municipal — Inscrições abertas em breve.</p>
+        </div>
+        <div class="card">
+          <h3>Voluntariado</h3>
+          <p>Junta-te a nós como chefe, monitor ou apoio logístico.</p>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container footer-inner">
-      <p>© Agrupamento nº 17 — Núcleo VIII — Fundado em 14 de Maio de 1995</p>
-      <p>Desenvolvido por equipa voluntária — substitua contacto para administração.</p>
+  <footer class="footer">
+    <div class="container">
+      <div style="display:flex; justify-content:space-between; align-items:center; gap:18px;">
+        <div>
+          <strong>Agrupamento 17 – Núcleo VIII - A.E.A</strong>
+          <div style="margin-top:6px"><small>Todos os direitos reservados.</small></div>
+        </div>
+        <div style="text-align:right"><small>Desenvolvido com apoio — Template entregue</small></div>
+      </div>
     </div>
   </footer>
-
-<script src="main.js"></script>
 </body>
 </html>
